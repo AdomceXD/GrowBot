@@ -1,0 +1,35 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/home/adomce/GrowBot/cmake-build-debug",
+	"dir-cur-src" : "/home/adomce/GrowBot",
+	"dir-top-bld" : "/home/adomce/GrowBot/cmake-build-debug",
+	"dir-top-src" : "/home/adomce/GrowBot",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"/usr/include/dpp"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/adomce/GrowBot/cmake-build-debug/CMakeFiles/GrowBot.dir",
+	"sources" : 
+	{
+		"CMakeFiles/GrowBot.dir/Database.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/adomce/GrowBot/Database.cpp"
+		},
+		"CMakeFiles/GrowBot.dir/main.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/adomce/GrowBot/main.cpp"
+		}
+	}
+}
