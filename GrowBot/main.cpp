@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    const string BOT_TOKEN = "Insert bot token ere'";
+    const string BOT_TOKEN = "Insert token ere'";
 
     Database db("data.json");
     dpp::cluster bot(BOT_TOKEN);
@@ -74,8 +74,11 @@ int main() {
         cerr << "Stats error: " << e.what() << endl;
         event.reply("An error occurred while fetching your stats.");
     }
-} // add more commands after here
+} else if (event.command.get_command_name() == "credits") {
+    event.reply("Bot made by lietuvis_official");
+}
 
+//add more commands here
     });
 
 
@@ -97,9 +100,12 @@ int main() {
                 dpp::command_option(dpp::co_integer, "addnum", "Number of coins to add", true)
             );
 
+            dpp::slashcommand credits_cmd("credits", "Print credits", bot.me.id);
+
             bot.global_command_create(register_cmd);
             bot.global_command_create(stats_cmd);
             bot.global_command_create(addstat_cmd);
+            bot.global_command_create(credits_cmd);
 
             cout << "Commands registered! Bot is ready." << endl;
         }
